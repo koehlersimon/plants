@@ -12,6 +12,14 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $title = '';
 
     /**
+     * media
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     * @Cascade remove
+     */
+    protected $media = null;
+
+    /**
      * description
      *
      * @var string
@@ -31,6 +39,16 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var string
      */
     protected $target = '';
+
+    /**
+     * Returns the media
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $media
+     */
+    public function getMedia()
+    {
+        return $this->media;
+    }
 
     /**
      * categories
