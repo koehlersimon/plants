@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-10-02T12:17:00Z" product-name="plants">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-08-30T12:17:00Z" product-name="plants">
 		<header/>
 		<body>
 
@@ -15,6 +15,9 @@
 			</trans-unit>
 			<trans-unit id="tx_plants_domain_model_plant.description">
 				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.media">
+				<source>Media</source>
 			</trans-unit>
 
 		</body>

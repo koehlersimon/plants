@@ -1,5 +1,6 @@
 <?php
 namespace SIMONKOEHLER\Plants\Domain\Model;
+use TYPO3\CMS\Extbase\Annotation\ORM\Cascade;
 
 class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
