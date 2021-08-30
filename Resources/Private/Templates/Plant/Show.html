@@ -6,16 +6,14 @@
 
 <div class="row">
     <div class="col-sm-6">
-        <p class="lead">
-            <f:if condition="{plant.description}">
-                <f:then>
-                    <f:format.raw>{plant.description}</f:format.raw>
-                </f:then>
-                <f:else>
-                    <f:translate key="nodescription"/>
-                </f:else>
-            </f:if>
-        </p>
+        <f:if condition="{plant.description}">
+            <f:then>
+                <f:format.html parseFuncTSPath="">{plant.description}</f:format.html>
+            </f:then>
+            <f:else>
+                <f:translate key="nodescription"/>
+            </f:else>
+        </f:if>
     </div>
     <div class="col-sm-6">
         <f:if condition="{plant.media.0}">
