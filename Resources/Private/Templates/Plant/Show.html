@@ -1,8 +1,8 @@
 <f:link.page pageUid="124">
-    <small class="text-muted">Plants</small>
+    <small class="text-muted"><f:translate key="plants"/></small>
 </f:link.page>
 
-<h1 class="display-3">&lt;{plant.title}&gt;</h1>
+<h1 class="display-3 fw-bold">{plant.title}</h1>
 
 <div class="row">
     <div class="col-sm-6">
@@ -12,33 +12,12 @@
                     <f:format.raw>{plant.description}</f:format.raw>
                 </f:then>
                 <f:else>
-                    No description for this tag
+                    No description for this plant available yet
                 </f:else>
             </f:if>
         </p>
     </div>
     <div class="col-sm-6">
-        <h5>Attributes for the <strong class="text-primary">&lt;{plant.title}&gt;</strong> tag:</h5>
-        <table class="table table-bordered">
-            <tr>
-                <th>Name</th>
-                <th>Value</th>
-            </tr>
-        </table>
-    </div>
-</div>
-
-<hr>
-
-<h2>Examples</h2>
-
-<div class="row">
-    <div class="col-sm-6">
-        <div class="alert alert-info">
-            Coming soon...
-        </div>
-    </div>
-    <div class="col-sm-6">
-
+        <img class="img-fluid" src="https://via.placeholder.com/600x480" alt="Plant Placeholder">
     </div>
 </div>

@@ -8,6 +8,11 @@
 				<target>Sprache</target>
 			</trans-unit>
 
+			<trans-unit id="plants">
+				<target>Pflanzen</target>
+			</trans-unit>
+
+
 		</body>
 	</file>
 </xliff>

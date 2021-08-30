@@ -8,6 +8,10 @@
 				<source>Language</source>
 			</trans-unit>
 
+			<trans-unit id="plants">
+				<source>Plants</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
