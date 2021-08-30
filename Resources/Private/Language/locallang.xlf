@@ -8,8 +8,20 @@
 				<source>Language</source>
 			</trans-unit>
 
+			<trans-unit id="plant">
+				<source>Plant</source>
+			</trans-unit>
 			<trans-unit id="plants">
 				<source>Plants</source>
+			</trans-unit>
+			<trans-unit id="category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="nodescription">
+				<source>No description available yet</source>
 			</trans-unit>
 
 		</body>
