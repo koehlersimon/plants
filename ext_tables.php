@@ -11,6 +11,12 @@ call_user_func(
             'Plants List'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'Plants',
+            'Detail',
+            'Plants Detail'
+        );
+
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::makeCategorizable(
             'plants',
             'tx_plants_domain_model_plant'
