@@ -9,7 +9,7 @@
         <article role="article">
         <f:if condition="{plant.description}">
             <f:then>
-                <f:format.html parseFuncTSPath="">{plant.description}</f:format.html>
+                <f:format.html parseFuncTSPath="lib.parseFunc">{plant.description}</f:format.html>
             </f:then>
             <f:else>
                 <f:translate key="nodescription"/>
@@ -17,7 +17,7 @@
         </f:if>
         <f:if condition="{plant.cultivation}">
             <h2><f:translate key="cultivation"/></h2>
-            <f:format.html parseFuncTSPath="">{plant.cultivation}</f:format.html>
+            <f:format.html parseFuncTSPath="lib.parseFunc">{plant.cultivation}</f:format.html>
         </f:if>
         </article>
     </div>
