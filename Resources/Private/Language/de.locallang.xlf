@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file target-language="de" source-language="en" datatype="plaintext" original="messages" date="2020-10-02T12:17:00Z" product-name="htmltags">
+		<header/>
+		<body>
+
+			<trans-unit id="language">
+				<target>Sprache</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

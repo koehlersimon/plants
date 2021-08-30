@@ -1,0 +1,44 @@
+<f:link.page pageUid="124">
+    <small class="text-muted">HTML Tags</small>
+</f:link.page>
+
+<h1 class="display-3">&lt;{tag.title}&gt;</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+        <p class="lead">
+            <f:if condition="{tag.description}">
+                <f:then>
+                    <f:format.raw>{tag.description}</f:format.raw>
+                </f:then>
+                <f:else>
+                    No description for this tag
+                </f:else>
+            </f:if>
+        </p>
+    </div>
+    <div class="col-sm-6">
+        <h5>Attributes for the <strong class="text-primary">&lt;{tag.title}&gt;</strong> tag:</h5>
+        <table class="table table-bordered">
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<hr>
+
+<h2>Examples</h2>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="alert alert-info">
+            Coming soon...
+        </div>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+</div>

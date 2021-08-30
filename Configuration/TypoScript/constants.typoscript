@@ -1,0 +1,17 @@
+plugin.tx_plants{
+
+    settings{
+        # cat=tx_plants; type=int; label=List Page for Plants Directory
+        listPage =
+    }
+    view{
+        templateRootPath = EXT:plants/Resources/Private/Templates/
+        partialRootPath = EXT:plants/Resources/Private/Partials/
+        layoutRootPath = EXT:plants/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=tx_plants; type=string; label=Links Storage Folder
+        storagePid =
+    }
+
+}

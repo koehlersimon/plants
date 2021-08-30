@@ -1,0 +1,142 @@
+plugin.tx_plants{
+
+    settings{
+        listPage = {$plugin.tx_plants.settings.listPage}
+    }
+    view{
+        templateRootPaths.0 = {$plugin.tx_plants.view.templateRootPath}
+        partialRootPaths.0 = {$plugin.tx_plants.view.partialRootPath}
+        layoutRootPaths.0 = {$plugin.tx_plants.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_plants.persistence.storagePid}
+    }
+
+    _CSS_DEFAULT_STYLE(
+        .tx-plants > header,
+        .tx-plants > .list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -20px;
+            margin-left: -20px;
+        }
+        .tx-plants > header .title,
+        .tx-plants > header .menu{
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .tx-plants > header .menu{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .tx-plants > header .menu select{
+            padding: 5px 8px;
+            border: 1px solid #ccc;
+        }
+        .tx-plants .list .item {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+            line-height: 1 !important;
+        }
+        .tx-plants .align-items-center {
+            align-items: center;
+        }
+        .tx-plants hr {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+        /* Pagination */
+        .tx-plants .f3-widget-paginator {
+          display: flex;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          max-width: 100%;
+          overflow-x: scroll;
+        }
+        .tx-plants .f3-widget-paginator li {
+          background-color: #eee;
+          border-right: 1px solid #ccc;
+          border-radius: 0 !important;
+        }
+        .tx-plants .f3-widget-paginator li.current {
+          background-color: #ccc;
+          padding: 16px 24px;
+          color: #2b2b2b;
+          font-weight: bold;
+          font-size: 1.4rem;
+        }
+        .tx-plants .f3-widget-paginator li a {
+          display: block;
+          position: relative;
+          padding: 16px 24px;
+          text-decoration: none;
+          font-size: 1.4rem;
+          color: #2b2b2b;
+        }
+        .tx-plants .f3-widget-paginator li a:hover {
+          background-color: #ccc;
+        }
+        .tx-plants .f3-widget-paginator li.previous,
+        .tx-plants .f3-widget-paginator li.next {
+          position: relative;
+          min-width: 30px;
+        }
+        .tx-plants .f3-widget-paginator li.previous a,
+        .tx-plants .f3-widget-paginator li.next a {
+          text-indent: -9999px;
+          position: relative;
+        }
+        .tx-plants .f3-widget-paginator li.previous a:hover,
+        .tx-plants .f3-widget-paginator li.next a:hover {
+          background: none;
+        }
+        .tx-plants .f3-widget-paginator li.previous:before,
+        .tx-plants .f3-widget-paginator li.next:before {
+          content: ">";
+          font-weight: bold;
+          color: #2b2b2b;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+        }
+        .tx-plants .f3-widget-paginator li.previous:hover,
+        .tx-plants .f3-widget-paginator li.next:hover {
+          background-color: #ccc;
+        }
+        .tx-plants .f3-widget-paginator li.previous:before {
+          content: "<";
+        }
+        .tx-plants .f3-widget-paginator li:last-child {
+          border-right: none;
+        }
+        @media (min-width: 768px) {
+          .tx-plants .f3-widget-paginator li.current,
+          .tx-plants .f3-widget-paginator li a {
+            padding: 10px 15px;
+            font-size: 1.1rem;
+          }
+        }
+        @media (min-width: 1024px) {
+          .tx-plants .f3-widget-paginator li.current,
+          .tx-plants .f3-widget-paginator li a {
+            padding: 8px 12px;
+            font-size: 1rem;
+          }
+        }
+    )
+
+}

@@ -1,0 +1,48 @@
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <f:render section="List" arguments="{plants:plants}"/>
+
+</f:section>
+
+<f:section name="List">
+    <div class="list">
+        <table class="table table-striped">
+            <tr class="bg-primary text-light">
+                <th>Plant</th>
+                <th><span style="white-space: nowrap;">HTML 5</span></th>
+                <th>Description</th>
+            </tr>
+            <f:for each="{plants}" as="plant">
+                <tr>
+                    <td>
+                        <f:link.action action="show" arguments="{plant:plant}">
+                            <strong>&lt;{plant.title}&gt;</strong>
+                        </f:link.action>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <f:format.crop maxCharacters="180">{plant.description}</f:format.crop>
+                    </td>
+                </tr>
+            </f:for>
+        </table>
+    </div>
+</f:section>
+
+<f:section name="FooterAssets">
+    <script>
+        // TYPO3 Extension links
+        document.addEventListener("DOMContentLoaded", function() {
+            let plantsCategorySelect = document.getElementById('tx-plants-category-select');
+            plantsCategorySelect.onchange = function(e){
+                if(e.target.value !== ''){
+                    window.location = e.target.value;
+                }
+            }
+        });
+    </script>
+</f:section>

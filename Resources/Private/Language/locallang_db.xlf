@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-10-02T12:17:00Z" product-name="htmltags">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_htmltags_domain_model_tag">
+				<source>Tag</source>
+			</trans-unit>
+			<trans-unit id="tx_htmltags_domain_model_tag.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_htmltags_domain_model_tag.slug">
+				<source>Slug</source>
+			</trans-unit>
+			<trans-unit id="tx_htmltags_domain_model_tag.description">
+				<source>Description</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
