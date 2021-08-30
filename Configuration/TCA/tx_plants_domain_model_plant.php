@@ -22,7 +22,7 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, description',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description,media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, cultivation, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
     ],
     'palettes' => [
         'titlegroup' => ['showitem' => 'title']
@@ -110,7 +110,21 @@ return [
             'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.description',
             'config' => [
                 'type' => 'text',
-                'rows' => 10,
+                'cols' => 40,
+                'rows' => 8,
+                'enableRichtext' => true,
+                'default' => ''
+            ],
+        ],
+        'cultivation' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.cultivation',
+            'config' => [
+                'type' => 'text',
+                'cols' => 40,
+                'rows' => 8,
+                'enableRichtext' => true,
+                'default' => ''
             ],
         ],
         'media' => [
