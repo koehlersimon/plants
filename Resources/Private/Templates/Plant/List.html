@@ -7,38 +7,32 @@
 </f:section>
 
 <f:section name="List">
-    <div class="list">
-        <table class="table table-striped">
-            <tr class="bg-primary text-light">
-                <th><f:translate key="plant"/></th>
-                <th><f:translate key="category"/></th>
-                <th><f:translate key="description"/></th>
-            </tr>
-            <f:for each="{plants}" as="plant">
-                <tr>
-                    <td>
-                        <f:if condition="{plant.media.0}">
-                            <f:then>
-                                <f:image image="{plant.media.0}" class="img-fluid img-thumbnail rounded-circle me-2" alt="{plant.title}" width="60c" height="60c"/>
-                            </f:then>
-                            <f:else>
+    <div class="row g-3">
+        <f:for each="{plants}" as="plant">
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <f:if condition="{plant.media.0}">
+                        <f:then>
+                            <f:link.action action="show" arguments="{plant:plant}">
+                                <f:image image="{plant.media.0}" class="card-img" alt="{plant.title}"/>
+                            </f:link.action>
+                        </f:then>
+                        <f:else>
 
-                            </f:else>
-                        </f:if>
-
-                        <f:link.action action="show" arguments="{plant:plant}">
-                            <strong>{plant.title}</strong>
-                        </f:link.action>
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-                        <f:format.crop maxCharacters="180">{plant.description}</f:format.crop>
-                    </td>
-                </tr>
-            </f:for>
-        </table>
+                        </f:else>
+                    </f:if>
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">
+                            <f:link.action action="show" arguments="{plant:plant}">
+                                <strong>{plant.title}</strong>
+                            </f:link.action>
+                        </h5>
+                        <p class="card-text"><f:format.crop maxCharacters="180">{plant.description}</f:format.crop></p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </f:for>
     </div>
 </f:section>
 
