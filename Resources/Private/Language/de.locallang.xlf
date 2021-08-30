@@ -15,7 +15,7 @@
 				<target>Pflanzen</target>
 			</trans-unit>
 			<trans-unit id="category">
-				<target>Category</target>
+				<target>Kategorie</target>
 			</trans-unit>
 			<trans-unit id="description">
 				<target>Beschreibung</target>
