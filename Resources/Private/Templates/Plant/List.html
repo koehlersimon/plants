@@ -22,7 +22,7 @@
                         </f:else>
                     </f:if>
                     <div class="card-img-overlay d-flex align-items-center" style="background:rgba(0,0,0,0.3);">
-                        <f:link.action action="show" arguments="{plant:plant}">
+                        <f:link.action pageUid="{settings.detailPage}" action="show" arguments="{plant:plant}">
                             <h5 class="card-title mb-1 text-white"><strong>{plant.title}</strong></h5>
                             <p class="card-text text-white small"><f:format.crop maxCharacters="180">{plant.description}</f:format.crop></p>
                         </f:link.action>

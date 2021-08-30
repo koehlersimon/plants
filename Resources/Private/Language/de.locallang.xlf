@@ -23,6 +23,9 @@
 			<trans-unit id="nodescription">
 				<target>Keine Beschreibung vorhanden</target>
 			</trans-unit>
+			<trans-unit id="backtolist">
+				<target>Zurück zur Liste</target>
+			</trans-unit>
 
 
 		</body>

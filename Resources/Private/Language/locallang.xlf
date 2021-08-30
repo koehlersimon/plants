@@ -23,6 +23,9 @@
 			<trans-unit id="nodescription">
 				<source>No description available yet</source>
 			</trans-unit>
+			<trans-unit id="backtolist">
+				<source>Back to List</source>
+			</trans-unit>
 
 		</body>
 	</file>
