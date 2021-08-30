@@ -17,6 +17,15 @@
             <f:for each="{plants}" as="plant">
                 <tr>
                     <td>
+                        <f:if condition="{plant.media.0}">
+                            <f:then>
+                                <f:image class="rounded-circle img-fluid" img="{plant.media.0}" width="60" height="60" />
+                            </f:then>
+                            <f:else>
+
+                            </f:else>
+                        </f:if>
+
                         <f:link.action action="show" arguments="{plant:plant}">
                             <strong>{plant.title}</strong>
                         </f:link.action>
