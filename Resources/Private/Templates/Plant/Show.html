@@ -20,14 +20,16 @@
         </f:if>
     </div>
     <div class="col-sm-6">
+        <div aria-label="{plant.title}">
         <f:if condition="{plant.media.0}">
             <f:then>
-                <f:image image="{plant.media.0}" class="img-fluid" alt="{plant.title}" />
+                <f:image image="{plant.media.0}" class="img-fluid shadow" alt="{plant.title}" title="{plant.title}" />
             </f:then>
             <f:else>
-                <img class="img-fluid" src="https://via.placeholder.com/600x480" title="{plant.title}" alt="placeholder image" width="600" height="480">
+                <img class="img-fluid shadow" src="https://via.placeholder.com/600x480" title="{plant.title}" alt="placeholder image" width="600" height="480">
             </f:else>
         </f:if>
+        </div>
     </div>
 </div>
 
