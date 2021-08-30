@@ -14,7 +14,7 @@
                     <f:if condition="{plant.media.0}">
                         <f:then>
                             <f:link.action action="show" arguments="{plant:plant}">
-                                <f:image image="{plant.media.0}" class="card-img" alt="{plant.title}"/>
+                                <f:image image="{plant.media.0}" class="card-img img-fluid" alt="{plant.title}" width="240c" height="240c"/>
                             </f:link.action>
                         </f:then>
                         <f:else>
@@ -23,7 +23,7 @@
                     </f:if>
                     <div class="card-img-overlay">
                         <h5 class="card-title">
-                            <f:link.action action="show" arguments="{plant:plant}">
+                            <f:link.action action="show" arguments="{plant:plant}" class="link-light">
                                 <strong>{plant.title}</strong>
                             </f:link.action>
                         </h5>
