@@ -2,6 +2,7 @@ plugin.tx_plants{
 
     settings{
         listPage = {$plugin.tx_plants.settings.listPage}
+        detailPage = {$plugin.tx_plants.settings.detailPage}
     }
     view{
         templateRootPaths.0 = {$plugin.tx_plants.view.templateRootPath}
