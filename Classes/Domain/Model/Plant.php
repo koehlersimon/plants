@@ -28,6 +28,20 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $description = '';
 
     /**
+     * cultivation
+     *
+     * @var string
+     */
+    protected $cultivation = '';
+
+    /**
+     * healthBenefits
+     *
+     * @var string
+     */
+    protected $healthBenefits = '';
+
+    /**
      * url
      *
      * @var string
@@ -82,70 +96,9 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the isvoid
-     *
-     * @return int $isvoid
-     */
-    public function getIsvoid()
-    {
-        return $this->isvoid;
-    }
-
-    /**
-     * Returns the isunique
-     *
-     * @return int $isunique
-     */
-    public function getIsunique()
-    {
-        return $this->isunique;
-    }
-
-    /**
-     * Returns the owner
-     *
-     * @return int $owner
-     */
-    public function getOwner()
-    {
-        return $this->owner;
-    }
-
-    /**
-     * Sets the owner
-     *
-     * @param int $owner
-     * @return void
-     */
-    public function setOwner($owner)
-    {
-        $this->owner = $owner;
-    }
-
-    /**
-     * Returns the target
-     *
-     * @return int $target
-     */
-    public function getTarget()
-    {
-        return $this->target;
-    }
-
-    /**
-     * Returns the htmlversion
-     *
-     * @return int $htmlversion
-     */
-    public function getHtmlversion()
-    {
-        return $this->htmlversion;
-    }
-
-    /**
      * Returns the title
      *
-     * @return int $title
+     * @return string $title
      */
     public function getTitle()
     {
@@ -155,7 +108,7 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the url
      *
-     * @return int $url
+     * @return string $url
      */
     public function getUrl()
     {
@@ -165,7 +118,7 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the description
      *
-     * @return int $description
+     * @return string $description
      */
     public function getDescription()
     {
@@ -173,12 +126,23 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the codeType
+     * Returns the cultivation
      *
-     * @return int $codeType
+     * @return string $cultivation
      */
-    public function getCodeType()
+    public function getCultivation()
     {
-        return $this->codeType;
+        return $this->cultivation;
     }
+
+    /**
+     * Returns the healthBenefits
+     *
+     * @return string $healthBenefits
+     */
+    public function getHealthBenefits()
+    {
+        return $this->healthBenefits;
+    }
+
 }
