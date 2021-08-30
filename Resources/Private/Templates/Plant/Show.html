@@ -14,6 +14,10 @@
                 <f:translate key="nodescription"/>
             </f:else>
         </f:if>
+        <f:if condition="{plant.cultivation}">
+            <h2><f:translate key="cultivation"/></h2>
+            <f:format.html parseFuncTSPath="">{plant.cultivation}</f:format.html>
+        </f:if>
     </div>
     <div class="col-sm-6">
         <f:if condition="{plant.media.0}">
