@@ -16,7 +16,7 @@ call_user_func(
             'tx_plants_domain_model_plant'
         );
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('plants', 'Configuration/TypoScript', 'Plant Database Static Configuration');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('plants', 'Configuration/TypoScript', 'PLANTS Setup');
 
     }
 );
