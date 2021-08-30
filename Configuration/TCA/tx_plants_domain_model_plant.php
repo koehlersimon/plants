@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:htmltags/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant',
+        'title' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant',
         'label' => 'title',
         'label_alt' => 'slug',
         'default_sortby' => 'ORDER BY slug ASC',
@@ -56,7 +56,7 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_htmltags_domain_model_tag',
+                'foreign_table' => 'tx_plants_domain_model_plant',
                 'foreign_table_where' => 'AND tx_plants_domain_model_plant.pid=###CURRENT_PID### AND tx_plants_domain_model_plant.sys_language_uid IN (-1,0)',
             ],
         ],
@@ -88,7 +88,7 @@ return [
         ],
         'slug' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:htmltags/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.slug',
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.slug',
             'config' => [
                 'type' => 'slug',
                 'generatorOptions' => [
@@ -107,7 +107,7 @@ return [
         ],
         'description' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:htmltags/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.description',
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.description',
             'config' => [
                 'type' => 'text',
                 'rows' => 10,
