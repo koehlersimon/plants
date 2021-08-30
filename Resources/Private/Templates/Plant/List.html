@@ -21,11 +21,11 @@
 
                         </f:else>
                     </f:if>
-                    <div class="card-img-overlay d-flex align-items-center">
+                    <div class="card-img-overlay d-flex align-items-center" style="background:rgba(0,0,0,0.3);">
                         <f:link.action action="show" arguments="{plant:plant}">
                             <h5 class="card-title text-white"><strong>{plant.title}</strong></h5>
-                            <p class="card-text small"><f:format.crop maxCharacters="180">{plant.description}</f:format.crop></p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+                            <p class="card-text text-white small"><f:format.crop maxCharacters="180">{plant.description}</f:format.crop></p>
+                            <p class="card-text text-white">Last updated 3 mins ago</p>
                         </f:link.action>
                     </div>
                 </div>
