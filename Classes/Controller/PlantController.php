@@ -30,8 +30,11 @@ class PlantController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     }
 
     public function showAction(\SIMONKOEHLER\Plants\Domain\Model\Plant $plant){
-        $metaTagManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\MetaTag\MetaTagManagerRegistry::class)->getManagerForProperty('og:title');
-        $metaTagManager->addProperty('og:title', $plant->getTitle());
+        $metaTagManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\MetaTag\MetaTagManagerRegistry::class);
+
+        $titleManager = $metaTagManager->getManagerForProperty('og:title');
+        $titleManager->addProperty('og:title', $plant->getTitle());
+
         $this->view->assign('plant',$plant);
     }
 

@@ -16,7 +16,7 @@ return [
             'disabled' => 'hidden',
         ],
         'searchFields' => 'title,description',
-        'iconfile' => 'EXT:plants/Resources/Public/Icons/icon.svg'
+        'iconfile' => 'EXT:plants/ext_icon.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, description',
