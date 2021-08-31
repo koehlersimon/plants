@@ -18,14 +18,8 @@
                 <tr>
                     <td>
                         <f:if condition="{plant.media.0}">
-                            <f:then>
-                                <f:image image="{plant.media.0}" class="img-fluid img-thumbnail rounded-circle me-2" alt="{plant.title}" width="60c" height="60c"/>
-                            </f:then>
-                            <f:else>
-
-                            </f:else>
+                            <f:image image="{plant.media.0}" class="img-fluid img-thumbnail rounded-circle me-2" alt="{plant.title}" width="60c" height="60c"/>
                         </f:if>
-
                         <f:link.action action="show" arguments="{plant:plant}">
                             <strong>{plant.title}</strong>
                         </f:link.action>
@@ -40,18 +34,4 @@
             </f:for>
         </table>
     </div>
-</f:section>
-
-<f:section name="FooterAssets">
-    <script>
-        // TYPO3 Extension links
-        document.addEventListener("DOMContentLoaded", function() {
-            let plantsCategorySelect = document.getElementById('tx-plants-category-select');
-            plantsCategorySelect.onchange = function(e){
-                if(e.target.value !== ''){
-                    window.location = e.target.value;
-                }
-            }
-        });
-    </script>
 </f:section>

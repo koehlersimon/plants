@@ -32,17 +32,3 @@
         </f:for>
     </div>
 </f:section>
-
-<f:section name="FooterAssets">
-    <script>
-        // TYPO3 Extension links
-        document.addEventListener("DOMContentLoaded", function() {
-            let plantsCategorySelect = document.getElementById('tx-plants-category-select');
-            plantsCategorySelect.onchange = function(e){
-                if(e.target.value !== ''){
-                    window.location = e.target.value;
-                }
-            }
-        });
-    </script>
-</f:section>
