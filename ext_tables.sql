@@ -10,6 +10,7 @@ CREATE TABLE tx_plants_domain_model_plant (
 	description text NOT NULL,
 	cultivation text NOT NULL,
 	health_benefits text NOT NULL,
+	botanical_name varchar(255) DEFAULT '0' NOT NULL,
 	media varchar(100) DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,

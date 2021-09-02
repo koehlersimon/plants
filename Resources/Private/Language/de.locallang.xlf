@@ -29,6 +29,12 @@
 			<trans-unit id="cultivation">
 				<target>Anbau</target>
 			</trans-unit>
+			<trans-unit id="health_benefits">
+				<target>Gesundheitliche Vorteile</target>
+			</trans-unit>
+			<trans-unit id="botanical_name">
+				<target>Botanischer Name</target>
+			</trans-unit>
 
 		</body>
 	</file>

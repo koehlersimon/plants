@@ -19,7 +19,7 @@ return [
         'iconfile' => 'EXT:plants/ext_icon.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, description',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, botanical_name, description',
     ],
     'types' => [
         '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, cultivation, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
@@ -80,6 +80,15 @@ return [
         'title' => [
             'exclude' => true,
             'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.title',
+            'config' => [
+                'type' => 'input',
+                'size' => 40,
+                'eval' => 'trim',
+            ],
+        ],
+        'botanical_name' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.botanical_name',
             'config' => [
                 'type' => 'input',
                 'size' => 40,

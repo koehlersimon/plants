@@ -29,6 +29,12 @@
 			<trans-unit id="cultivation">
 				<source>Cultivation</source>
 			</trans-unit>
+			<trans-unit id="health_benefits">
+				<source>Health Benefits</source>
+			</trans-unit>
+			<trans-unit id="botanical_name">
+				<source>Botanial Name</source>
+			</trans-unit>
 
 		</body>
 	</file>

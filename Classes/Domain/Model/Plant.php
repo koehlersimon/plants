@@ -42,6 +42,13 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $healthBenefits = '';
 
     /**
+     * botanicalName
+     *
+     * @var string
+     */
+    protected $botanicalName = '';
+
+    /**
      * url
      *
      * @var string
@@ -143,6 +150,16 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function getHealthBenefits()
     {
         return $this->healthBenefits;
+    }
+
+    /**
+     * Returns the botanicalName
+     *
+     * @return string $botanicalName
+     */
+    public function getBotanicalName()
+    {
+        return $this->botanicalName;
     }
 
 }
