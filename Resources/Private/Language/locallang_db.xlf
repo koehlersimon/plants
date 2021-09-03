@@ -22,6 +22,9 @@
 			<trans-unit id="tx_plants_domain_model_plant.cultivation">
 				<source>Cultivation</source>
 			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.botanical_name">
+				<source>Botanical Name</source>
+			</trans-unit>
 
 		</body>
 	</file>
