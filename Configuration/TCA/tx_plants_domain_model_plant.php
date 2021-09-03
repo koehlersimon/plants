@@ -25,7 +25,7 @@ return [
         '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
     ],
     'palettes' => [
-        'titlegroup' => ['showitem' => 'title, botanical_name']
+        'titlegroup' => ['showitem' => 'title, botanical_name, family']
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -75,6 +75,19 @@ return [
                         '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
                     ]
                 ],
+            ],
+        ],
+        'family' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.family',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'default' => 0,
+                'items' => [
+                    ['Please choose', 0],
+                ],
+                'foreign_table' => 'tx_plants_domain_model_family'
             ],
         ],
         'title' => [
