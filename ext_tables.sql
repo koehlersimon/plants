@@ -38,6 +38,7 @@ CREATE TABLE tx_plants_domain_model_plant (
     sorting int(11) unsigned DEFAULT '0' NOT NULL,
     categories int(11) unsigned DEFAULT '0' NOT NULL,
 
+	family int(11) DEFAULT '0' NOT NULL,
     title varchar(255) DEFAULT '0' NOT NULL,
     slug varchar(255) DEFAULT '0' NOT NULL,
 	description text NOT NULL,
