@@ -20,14 +20,6 @@
                 <f:translate key="nodescription"/>
             </f:else>
         </f:if>
-        <f:if condition="{plant.healthBenefits}">
-            <h2><f:translate key="health_benefits"/></h2>
-            <f:format.html parseFuncTSPath="lib.parseFunc">{plant.healthBenefits}</f:format.html>
-        </f:if>
-        <f:if condition="{plant.cultivation}">
-            <h2><f:translate key="cultivation"/></h2>
-            <f:format.html parseFuncTSPath="lib.parseFunc">{plant.cultivation}</f:format.html>
-        </f:if>
         </article>
     </div>
     <div class="col-sm-6">
@@ -42,6 +34,21 @@
         </f:if>
         </div>
     </div>
+</div>
+
+<div class="row row-cols-1 row-cols-lg-2">
+    <f:if condition="{plant.healthBenefits}">
+    <div class="col">
+        <h2><f:translate key="health_benefits"/></h2>
+        <f:format.html parseFuncTSPath="lib.parseFunc">{plant.healthBenefits}</f:format.html>
+    </div>
+    </f:if>
+    <f:if condition="{plant.cultivation}">
+    <div class="col">
+        <h2><f:translate key="cultivation"/></h2>
+        <f:format.html parseFuncTSPath="lib.parseFunc">{plant.cultivation}</f:format.html>
+    </div>
+    </f:if>
 </div>
 
 <f:link.page pageUid="{settings.listPage}" class="btn btn-primary mt-4"><f:translate key="backtolist"/></f:link.page>
