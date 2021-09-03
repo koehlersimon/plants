@@ -19,6 +19,9 @@
 			<trans-unit id="tx_plants_domain_model_plant.media">
 				<source>Media</source>
 			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.health_benefits">
+				<source>Health Benefits</source>
+			</trans-unit>
 			<trans-unit id="tx_plants_domain_model_plant.cultivation">
 				<source>Cultivation</source>
 			</trans-unit>

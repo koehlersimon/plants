@@ -24,7 +24,7 @@
                     <div class="card-img-overlay d-flex align-items-center" style="background:rgba(0,0,0,0.3);">
                         <f:link.action pageUid="{settings.detailPage}" action="show" arguments="{plant:plant}">
                             <h5 class="card-title mb-1 text-white"><strong>{plant.title}</strong></h5>
-                            <div class="card-text text-white small"><f:format.html parseFuncTSPath=""><f:format.crop maxCharacters="140">{plant.description}</f:format.crop></f:format.html></div>
+                            <div class="card-text text-white small"><f:format.html parseFuncTSPath=""><f:format.crop maxCharacters="{settings.teaserMaxCharacters}">{plant.description}</f:format.crop></f:format.html></div>
                         </f:link.action>
                     </div>
                 </div>
