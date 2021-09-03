@@ -3,6 +3,7 @@ plugin.tx_plants{
     settings{
         listPage = {$plugin.tx_plants.settings.listPage}
         detailPage = {$plugin.tx_plants.settings.detailPage}
+        teaserMaxCharacters = {$plugin.tx_plants.settings.teaserMaxCharacters}
     }
     view{
         templateRootPaths.0 = {$plugin.tx_plants.view.templateRootPath}
