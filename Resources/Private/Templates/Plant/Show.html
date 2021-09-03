@@ -26,7 +26,7 @@
         <div role="img" aria-label="{plant.title}">
         <f:if condition="{plant.media.0}">
             <f:then>
-                <f:image image="{plant.media.0}" class="img-fluid shadow" alt="{plant.title}" title="{plant.title}" />
+                <f:image image="{plant.media.0}" class="img-fluid rounded shadow" alt="{plant.title}" title="{plant.title}" />
             </f:then>
             <f:else>
                 <img class="img-fluid shadow" src="https://via.placeholder.com/600x480" title="{plant.title}" alt="placeholder image" width="600" height="480">
@@ -36,15 +36,15 @@
     </div>
 </div>
 
-<div class="row g-0 row-cols-1 row-cols-lg-2">
+<div class="row row-cols-1 row-cols-lg-2">
     <f:if condition="{plant.healthBenefits}">
-    <div class="col p-4">
+    <div class="col">
         <h2><f:translate key="health_benefits"/></h2>
         <f:format.html parseFuncTSPath="lib.parseFunc">{plant.healthBenefits}</f:format.html>
     </div>
     </f:if>
     <f:if condition="{plant.cultivation}">
-    <div class="col p-4">
+    <div class="col">
         <h2><f:translate key="cultivation"/></h2>
         <f:format.html parseFuncTSPath="lib.parseFunc">{plant.cultivation}</f:format.html>
     </div>
