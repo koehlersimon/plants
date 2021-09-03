@@ -25,7 +25,7 @@ return [
         '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
     ],
     'palettes' => [
-        'titlegroup' => ['showitem' => 'title']
+        'titlegroup' => ['showitem' => 'title, botanical_name']
     ],
     'columns' => [
         'sys_language_uid' => [
