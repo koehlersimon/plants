@@ -9,7 +9,7 @@
     </f:if>
 </header>
 
-<div class="row">
+<div class="row mb-4">
     <div class="col-sm-6">
         <article role="article">
         <f:if condition="{plant.description}">
@@ -36,15 +36,15 @@
     </div>
 </div>
 
-<div class="row row-cols-1 row-cols-lg-2">
+<div class="row g-0 row-cols-1 row-cols-lg-2">
     <f:if condition="{plant.healthBenefits}">
-    <div class="col">
+    <div class="col p-4">
         <h2><f:translate key="health_benefits"/></h2>
         <f:format.html parseFuncTSPath="lib.parseFunc">{plant.healthBenefits}</f:format.html>
     </div>
     </f:if>
     <f:if condition="{plant.cultivation}">
-    <div class="col">
+    <div class="col p-4">
         <h2><f:translate key="cultivation"/></h2>
         <f:format.html parseFuncTSPath="lib.parseFunc">{plant.cultivation}</f:format.html>
     </div>
