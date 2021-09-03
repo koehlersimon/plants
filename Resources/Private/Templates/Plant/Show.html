@@ -2,7 +2,12 @@
     <small class="text-muted"><f:translate key="plants"/></small>
 </f:link.page>
 
-<h1 class="display-3 fw-bold">{plant.title}</h1>
+<header>
+    <h1 class="display-3 fw-bold">{plant.title}</h1>
+    <f:if condition="{plant.botanical_name}">
+        <small>{plant.botanical_name}</small>
+    </f:if>
+</header>
 
 <div class="row">
     <div class="col-sm-6">
