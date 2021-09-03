@@ -4,8 +4,8 @@
 
 <header>
     <h1 class="display-3 mb-0 fw-bold">{plant.title}</h1>
-    <f:if condition="{plant.botanical_name}">
-        <small class="text-muted">{plant.botanical_name}</small>
+    <f:if condition="{plant.botanicalName}">
+        <small class="text-muted">{plant.botanicalName}</small>
     </f:if>
 </header>
 
@@ -19,6 +19,10 @@
             <f:else>
                 <f:translate key="nodescription"/>
             </f:else>
+        </f:if>
+        <f:if condition="{plant.healthBenefits}">
+            <h2><f:translate key="health_benefits"/></h2>
+            <f:format.html parseFuncTSPath="lib.parseFunc">{plant.healthBenefits}</f:format.html>
         </f:if>
         <f:if condition="{plant.cultivation}">
             <h2><f:translate key="cultivation"/></h2>
