@@ -56,7 +56,7 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_plants_domain_model_plant',
+                'foreign_table' => 'tx_plants_domain_model_family',
                 'foreign_table_where' => 'AND tx_plants_domain_model_family.pid=###CURRENT_PID### AND tx_plants_domain_model_family.sys_language_uid IN (-1,0)',
             ],
         ],
