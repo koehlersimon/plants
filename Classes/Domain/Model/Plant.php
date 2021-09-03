@@ -21,6 +21,13 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $media = null;
 
     /**
+     * family
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SIMONKOEHLER\Plants\Domain\Model\Family>
+     */
+    protected $family = null;
+
+    /**
      * description
      *
      * @var string
@@ -70,6 +77,16 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function getMedia()
     {
         return $this->media;
+    }
+
+    /**
+     * Returns the family
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SIMONKOEHLER\Plants\Domain\Model\Family> $family
+     */
+    public function getFamily()
+    {
+        return $this->family;
     }
 
     /**
