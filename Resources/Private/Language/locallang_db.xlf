@@ -32,6 +32,10 @@
 				<source>Plant Family</source>
 			</trans-unit>
 
+			<trans-unit id="tx_plants_domain_model_family">
+				<source>Plant Family</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
