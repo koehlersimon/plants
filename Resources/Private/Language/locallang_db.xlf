@@ -35,6 +35,18 @@
 			<trans-unit id="tx_plants_domain_model_family">
 				<source>Plant Family</source>
 			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.slug">
+				<source>Slug</source>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.botanical_name">
+				<source>Botanical Name</source>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.description">
+				<source>Description</source>
+			</trans-unit>
 
 		</body>
 	</file>
