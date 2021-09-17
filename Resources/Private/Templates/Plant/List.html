@@ -10,24 +10,25 @@
     <div class="row row-cols-1 row-cols-lg-{settings.list.columns.lg} g-3">
         <f:for each="{plants}" as="plant">
             <div class="col">
-                <div class="card bg-dark text-white">
+
+                <div class="shadow p-3 d-flex align-items-center">
                     <f:if condition="{plant.media.0}">
                         <f:then>
                             <f:link.action action="show" arguments="{plant:plant}">
-                                <f:image image="{plant.media.0}" class="card-img img-fluid" alt="{plant.title}" width="240c" height="240c"/>
+                                <f:image image="{plant.media.0}" class="img-fluid" alt="{plant.title}" width="140c" height="140c"/>
                             </f:link.action>
                         </f:then>
                         <f:else>
                             <img class="card-img img-fluid" src="https://via.placeholder.com/240x240" title="{plant.title}" alt="placeholder image" width="240" height="240">
                         </f:else>
                     </f:if>
-                    <div class="card-img-overlay d-flex align-items-center" style="background:rgba(0,0,0,0.3);">
-                        <f:link.action pageUid="{settings.detailPage}" action="show" arguments="{plant:plant}">
-                            <h5 class="card-title mb-1 text-white"><strong>{plant.title}</strong></h5>
-                            <div class="card-text text-white small"><f:format.html parseFuncTSPath=""><f:format.crop maxCharacters="{settings.teaserMaxCharacters}">{plant.description}</f:format.crop></f:format.html></div>
-                        </f:link.action>
-                    </div>
+
+                    <f:link.action pageUid="{settings.detailPage}" action="show" arguments="{plant:plant}">
+                        <h5 class="card-title mb-1 text-white"><strong>{plant.title}</strong></h5>
+                        <div class="card-text text-white small"><f:format.html parseFuncTSPath=""><f:format.crop maxCharacters="{settings.teaserMaxCharacters}">{plant.description}</f:format.crop></f:format.html></div>
+                    </f:link.action>
                 </div>
+
             </div>
         </f:for>
     </div>
