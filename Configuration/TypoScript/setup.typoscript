@@ -4,6 +4,11 @@ plugin.tx_plants{
         listPage = {$plugin.tx_plants.settings.listPage}
         detailPage = {$plugin.tx_plants.settings.detailPage}
         teaserMaxCharacters = {$plugin.tx_plants.settings.teaserMaxCharacters}
+        list{
+            columns{
+                lg = {$plugin.tx_plants.settings.list.columns.lg}
+            }
+        }
     }
     view{
         templateRootPaths.0 = {$plugin.tx_plants.view.templateRootPath}

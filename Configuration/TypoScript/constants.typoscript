@@ -7,6 +7,11 @@ plugin.tx_plants{
         detailPage =
         # cat=tx_plants; type=int; label=Detail Max characters for teaser text crop in list views
         teaserMaxCharacters = 80
+        list{
+            columns{
+                lg = 4
+            }
+        }
     }
     view{
         templateRootPath = EXT:plants/Resources/Private/Templates/
