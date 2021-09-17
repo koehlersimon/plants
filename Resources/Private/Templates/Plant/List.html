@@ -11,7 +11,7 @@
         <f:for each="{plants}" as="plant">
             <div class="col">
 
-                    <f:link.action action="show" arguments="{plant:plant}" class="shadow p-3 d-flex align-items-center">
+                    <f:link.action controller="Plant" action="show" arguments="{plant:plant}" class="shadow p-3 d-flex align-items-center">
                         <f:if condition="{plant.media.0}">
                             <f:then>
                                 <f:image image="{plant.media.0}" class="img-fluid" alt="{plant.title}" width="140c" height="140c"/>
