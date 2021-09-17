@@ -103,7 +103,7 @@ return [
                 'generatorOptions' => [
                     'fields' => ['title'],
                     'fieldSeparator' => '-',
-                    'prefixParentPageSlug' => true,
+                    'prefixParentPageSlug' => false,
                     'replacements' => [
                         '/' => '',
                         '<' => '',
