@@ -3,6 +3,9 @@
     <f:if condition="{plant.botanicalName}">
         <small class="text-muted">{plant.botanicalName}</small>
     </f:if>
+    <f:if condition="{plant.family.title}">
+        / <small class="text-muted">{plant.family.title}</small>
+    </f:if>
 </header>
 
 <div class="row mb-4">
