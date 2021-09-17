@@ -12,20 +12,19 @@
             <div class="col">
 
                 <div class="shadow p-3 d-flex align-items-center">
-                    <f:if condition="{plant.media.0}">
-                        <f:then>
-                            <f:link.action action="show" arguments="{plant:plant}">
+                    <f:link.action action="show" arguments="{plant:plant}">
+                        <f:if condition="{plant.media.0}">
+                            <f:then>
                                 <f:image image="{plant.media.0}" class="img-fluid" alt="{plant.title}" width="140c" height="140c"/>
-                            </f:link.action>
-                        </f:then>
-                        <f:else>
-                            <img class="card-img img-fluid" src="https://via.placeholder.com/240x240" title="{plant.title}" alt="placeholder image" width="240" height="240">
-                        </f:else>
-                    </f:if>
-
-                    <f:link.action pageUid="{settings.detailPage}" action="show" arguments="{plant:plant}">
-                        <h5 class="card-title mb-1 text-white"><strong>{plant.title}</strong></h5>
-                        <div class="card-text text-white small"><f:format.html parseFuncTSPath=""><f:format.crop maxCharacters="{settings.teaserMaxCharacters}">{plant.description}</f:format.crop></f:format.html></div>
+                            </f:then>
+                            <f:else>
+                                <img class="card-img img-fluid" src="https://via.placeholder.com/240x240" title="{plant.title}" alt="placeholder image" width="240" height="240">
+                            </f:else>
+                        </f:if>
+                        <div class="p-2">
+                            <h5 class="card-title mb-1"><strong>{plant.title}</strong></h5>
+                            <div class="small"><f:format.html parseFuncTSPath=""><f:format.crop maxCharacters="{settings.teaserMaxCharacters}">{plant.description}</f:format.crop></f:format.html></div>
+                        </div>
                     </f:link.action>
                 </div>
 
