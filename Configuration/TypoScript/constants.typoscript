@@ -9,6 +9,7 @@ plugin.tx_plants{
         teaserMaxCharacters = 80
         list{
             columns{
+                # cat=tx_plants; type=int; label=Columns on large devices
                 lg = 4
             }
         }
