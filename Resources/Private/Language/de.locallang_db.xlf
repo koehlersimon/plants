@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file target-language="de" datatype="plaintext" original="messages" date="2021-09-23T18:49:00Z" product-name="plants">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_plants_domain_model_plant">
+				<target>Pflanze</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.title">
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.slug">
+				<target>Slug</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.media">
+				<target>Medien</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.health_benefits">
+				<target>Gesundheitsvorteile</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.cultivation">
+				<target>Kultivierung</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.botanical_name">
+				<target>Botanischer Name</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.family">
+				<target>Pflanzenfamilie</target>
+			</trans-unit>
+
+			<trans-unit id="tx_plants_domain_model_family">
+				<target>Pflanzenfamilie</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.title">
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.slug">
+				<target>Slug</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.botanical_name">
+				<target>Botanischer Name</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_family.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
