@@ -22,11 +22,11 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, botanical_name, description',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --palette--;;nutricion, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --palette--;;nutrition, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
     ],
     'palettes' => [
         'titlegroup' => ['showitem' => 'title, botanical_name, family'],
-        'nutricion' => ['showitem' => 'protein_content, iron_content']
+        'nutrition' => ['showitem' => 'protein_content, iron_content']
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -185,6 +185,24 @@ return [
                     'maxitems' => 50
                 ]
             ),
+        ],
+        'protein_content' => [
+            'exclude' => true,
+            'label' => 'Protein content',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'double2'
+            ]
+        ],
+        'iron_content' => [
+            'exclude' => true,
+            'label' => 'Iron content',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'double2'
+            ]
         ],
     ],
 ];
