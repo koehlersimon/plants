@@ -22,7 +22,7 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, botanical_name, description',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --palette--;;nutrition, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --palette--;Nutrition content per 100g serving;nutrition, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
     ],
     'palettes' => [
         'titlegroup' => ['showitem' => 'title, botanical_name, family'],
@@ -188,7 +188,7 @@ return [
         ],
         'protein_content' => [
             'exclude' => true,
-            'label' => 'Protein content (g)',
+            'label' => 'Protein content (g per 100g)',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
@@ -197,7 +197,7 @@ return [
         ],
         'iron_content' => [
             'exclude' => true,
-            'label' => 'Iron content (mg)',
+            'label' => 'Iron content (mg per 100g)',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
