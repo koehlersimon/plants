@@ -84,6 +84,13 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $ironContent = 0.0;
 
     /**
+     * fiberContent
+     *
+     * @var float
+     */
+    protected $fiberContent = 0.0;
+
+    /**
      * Returns the media
      *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $media
@@ -233,6 +240,27 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setIronContent(float $ironContent)
     {
         $this->ironContent = $ironContent;
+    }
+
+    /**
+     * Returns the fiberContent
+     *
+     * @return float $fiberContent
+     */
+    public function getFiberContent()
+    {
+        return $this->fiberContent;
+    }
+
+    /**
+     * Sets the fiberContent
+     *
+     * @param float $fiberContent
+     * @return void
+     */
+    public function setFiberContent(float $fiberContent)
+    {
+        $this->fiberContent = $fiberContent;
     }
 
 }

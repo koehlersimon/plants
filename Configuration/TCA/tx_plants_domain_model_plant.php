@@ -26,7 +26,7 @@ return [
     ],
     'palettes' => [
         'titlegroup' => ['showitem' => 'title, botanical_name, family'],
-        'nutrition' => ['showitem' => 'protein_content, iron_content']
+        'nutrition' => ['showitem' => 'protein_content, iron_content, fiber_content']
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -196,6 +196,15 @@ return [
             ]
         ],
         'iron_content' => [
+            'exclude' => true,
+            'label' => 'Iron content (mg per 100g)',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'double2'
+            ]
+        ],
+        'fiber_content' => [
             'exclude' => true,
             'label' => 'Iron content (mg per 100g)',
             'config' => [

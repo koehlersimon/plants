@@ -31,6 +31,15 @@
 			<trans-unit id="tx_plants_domain_model_plant.family">
 				<source>Plant Family</source>
 			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.iron_content">
+				<source>Iron Content</source>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.protein_content">
+				<source>Protein Content</source>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.fiber_content">
+				<source>Fiber Content</source>
+			</trans-unit>
 
 			<trans-unit id="tx_plants_domain_model_family">
 				<source>Plant Family</source>

@@ -31,6 +31,15 @@
 			<trans-unit id="tx_plants_domain_model_plant.family">
 				<target>Pflanzenfamilie</target>
 			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.iron_content">
+				<target>Eisengehalt</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.protein_content">
+				<target>Proteingehalt</target>
+			</trans-unit>
+			<trans-unit id="tx_plants_domain_model_plant.fiber_content">
+				<target>Ballaststoffgehalt</target>
+			</trans-unit>
 
 			<trans-unit id="tx_plants_domain_model_family">
 				<target>Pflanzenfamilie</target>
