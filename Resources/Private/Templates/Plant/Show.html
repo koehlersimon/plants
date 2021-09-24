@@ -10,7 +10,9 @@
 
 <div class="row mb-4">
     <div class="col-sm-6">
+        <f:if condition="{plant.proteinContent} || {plant.ironContent} || {plant.fiberContent}">
         <h3>Nährwerte per 100 gr:</h3>
+        </f:if>
         <table class="table table-sm table-bordered">
             <f:if condition="{plant.proteinContent}">
             <tr>
