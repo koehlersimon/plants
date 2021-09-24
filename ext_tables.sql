@@ -47,6 +47,9 @@ CREATE TABLE tx_plants_domain_model_plant (
 	botanical_name varchar(255) DEFAULT '0' NOT NULL,
 	media varchar(100) DEFAULT '0' NOT NULL,
 
+	protein_content double(11,2) NOT NULL DEFAULT '0.00',
+	iron_content double(11,2) NOT NULL DEFAULT '0.00',
+
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	cruser_id int(11) unsigned DEFAULT '0' NOT NULL,

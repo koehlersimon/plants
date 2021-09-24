@@ -22,10 +22,11 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, crdate, title, botanical_name, description',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, crdate, --palette--;;titlegroup, slug, description, health_benefits, cultivation, media, --palette--;;nutricion, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, fe_group;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:fe_group_formlabel'],
     ],
     'palettes' => [
-        'titlegroup' => ['showitem' => 'title, botanical_name, family']
+        'titlegroup' => ['showitem' => 'title, botanical_name, family'],
+        'nutricion' => ['showitem' => 'protein_content, iron_content']
     ],
     'columns' => [
         'sys_language_uid' => [

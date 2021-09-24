@@ -70,6 +70,20 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $target = '';
 
     /**
+     * proteinContent
+     *
+     * @var float
+     */
+    protected $proteinContent = 0.0;
+
+    /**
+     * ironContent
+     *
+     * @var float
+     */
+    protected $ironContent = 0.0;
+
+    /**
      * Returns the media
      *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $media
@@ -177,6 +191,48 @@ class Plant extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function getBotanicalName()
     {
         return $this->botanicalName;
+    }
+
+    /**
+     * Returns the proteinContent
+     *
+     * @return float $proteinContent
+     */
+    public function getProteinContent()
+    {
+        return $this->proteinContent;
+    }
+
+    /**
+     * Sets the proteinContent
+     *
+     * @param float $proteinContent
+     * @return void
+     */
+    public function setProteinContent(float $proteinContent)
+    {
+        $this->proteinContent = $proteinContent;
+    }
+
+    /**
+     * Returns the ironContent
+     *
+     * @return float $ironContent
+     */
+    public function getIronContent()
+    {
+        return $this->ironContent;
+    }
+
+    /**
+     * Sets the ironContent
+     *
+     * @param float $ironContent
+     * @return void
+     */
+    public function setIronContent(float $ironContent)
+    {
+        $this->ironContent = $ironContent;
     }
 
 }
