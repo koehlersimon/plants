@@ -4,8 +4,7 @@
         <small class="text-muted">{plant.botanicalName}</small>
     </f:if>
     <f:if condition="{plant.family}">
-    <f:debug title="plant.family">{plant.family}</f:debug>
-        / <small class="text-muted">{plant.family.title}</small>
+        / <small class="text-muted">{plant.family.0.title}</small>
     </f:if>
 </header>
 
