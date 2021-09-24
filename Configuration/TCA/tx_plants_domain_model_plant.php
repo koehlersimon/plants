@@ -188,7 +188,7 @@ return [
         ],
         'protein_content' => [
             'exclude' => true,
-            'label' => 'Protein content',
+            'label' => 'Protein content (g)',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
@@ -197,7 +197,7 @@ return [
         ],
         'iron_content' => [
             'exclude' => true,
-            'label' => 'Iron content',
+            'label' => 'Iron content (mg)',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
