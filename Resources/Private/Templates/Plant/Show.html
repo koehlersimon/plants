@@ -8,24 +8,29 @@
     </f:if>
 </header>
 
-<h3>Nährwerte per 100 gr:</h3>
-<table class="table table-sm table-bordered">
-    <f:if condition="{plant.proteinContent}">
-    <tr>
-        <th>Protein Content:</th>
-        <td>{plant.proteinContent}</td>
-    </tr>
-    </f:if>
-    <f:if condition="{plant.ironContent}">
-    <tr>
-        <th>Iron Content:</th>
-        <td>{plant.ironContent}</td>
-    </tr>
-    </f:if>
-</table>
-
 <div class="row mb-4">
     <div class="col-sm-6">
+        <h3>Nährwerte per 100 gr:</h3>
+        <table class="table table-sm table-bordered">
+            <f:if condition="{plant.proteinContent}">
+            <tr>
+                <th>Proteingehalt:</th>
+                <td>{plant.proteinContent} gr</td>
+            </tr>
+            </f:if>
+            <f:if condition="{plant.ironContent}">
+            <tr>
+                <th>Eisengehalt:</th>
+                <td>{plant.ironContent} mg</td>
+            </tr>
+            </f:if>
+            <f:if condition="{plant.fiberContent}">
+            <tr>
+                <th>Ballaststoffe:</th>
+                <td>{plant.fiberContent} gr</td>
+            </tr>
+            </f:if>
+        </table>
         <article role="article">
         <f:if condition="{plant.description}">
             <f:then>
