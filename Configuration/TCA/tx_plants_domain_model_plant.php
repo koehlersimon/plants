@@ -188,7 +188,7 @@ return [
         ],
         'protein_content' => [
             'exclude' => true,
-            'label' => 'Protein content (g per 100g)',
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.protein_content',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
@@ -197,7 +197,7 @@ return [
         ],
         'iron_content' => [
             'exclude' => true,
-            'label' => 'Iron content (mg per 100g)',
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.iron_content',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
@@ -206,7 +206,7 @@ return [
         ],
         'fiber_content' => [
             'exclude' => true,
-            'label' => 'Iron content (mg per 100g)',
+            'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.fiber_content',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
