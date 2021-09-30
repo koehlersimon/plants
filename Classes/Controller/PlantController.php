@@ -32,8 +32,9 @@ class PlantController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
         else{
             $this->view->assign('plants',$this->plantRepository->findAll());
         }
-        $plantFamlies = $this->familyRepository->findAll();
-        $this->view->assign('plantFamilies',$plantFamlies);
+        
+        $plantFamilies = $this->familyRepository->findAll();
+        $this->view->assign('plantFamilies',$plantFamilies);
         $this->view->assign('settings',$this->settings);
     }
 
