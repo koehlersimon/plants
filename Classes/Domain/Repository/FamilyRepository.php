@@ -6,8 +6,10 @@ use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
 class FamilyRepository extends \TYPO3\CMS\Extbase\Persistence\Repository {
 
-	protected $defaultOrderings = array(
-		'title' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING
-	);
+	public function initializeObject() {
+        $querySettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class);
+        $querySettings->setRespectStoragePage(false);
+        $this->setDefaultQuerySettings($querySettings);
+    }
 
 }
