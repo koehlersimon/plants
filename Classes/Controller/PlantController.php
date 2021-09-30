@@ -1,6 +1,7 @@
 <?php
 namespace SIMONKOEHLER\Plants\Controller;
 use SIMONKOEHLER\Plants\Domain\Repository\PlantRepository;
+use SIMONKOEHLER\Plants\Domain\Repository\FamilyRepository;
 
 class PlantController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
@@ -10,12 +11,18 @@ class PlantController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     protected $plantRepository;
 
     /**
+    * @var FamilyRepository
+    */
+    protected $familyRepository;
+
+    /**
      * Construct
      *
      * @return void
      */
-    public function __construct(PlantRepository $plantRepository) {
+    public function __construct(PlantRepository $plantRepository, FamilyRepository $familyRepository) {
         $this->plantRepository = $plantRepository;
+        $this->familyRepository = $familyRepository;
     }
 
     public function listAction(){
@@ -23,10 +30,13 @@ class PlantController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             $this->view->assign('plants',$this->plantRepository->findAllFiltered($this->request->getArgument('filter')));
         }
         else{
-            $this->view->assign('mode','all');
             $this->view->assign('plants',$this->plantRepository->findAll());
         }
-        $this->view->assign('categories',$this->plantRepository->getCategories($this->settings['rootCategory']));
+
+        if($this->settings['filter']['enabled']){
+            $plantFamlies = $this->familyRepository->findAll();
+            $this->view->assign('plantFamilies',$plantFamlies);
+        }
     }
 
     public function showAction(\SIMONKOEHLER\Plants\Domain\Model\Plant $plant){
