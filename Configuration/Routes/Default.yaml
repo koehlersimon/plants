@@ -1,0 +1,19 @@
+routeEnhancers:
+  PlantDetails:
+    type: Extbase
+    limitToPages: [6]
+    extension: Plants
+    plugin: Detail
+    routes:
+      - { routePath: '/{plant_title}', _controller: 'Plant::show', _arguments: {'plant_title': 'plant'} }
+    defaultController: 'Plant::show'
+    defaults:
+      page: '0'
+    requirements:
+      plant_title: '[a-zA-Z0-9].*'
+    aspects:
+      plant_title:
+        type: PersistedAliasMapper
+        tableName: 'tx_plants_domain_model_plant'
+        routeFieldName: 'slug'
+        routeValuePrefix: '/'
