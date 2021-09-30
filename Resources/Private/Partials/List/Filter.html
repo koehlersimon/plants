@@ -1,0 +1,20 @@
+<div class="row mb-4">
+    <div class="col-sm-4">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <f:translate key="filter.button.plant_family"/>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <f:for each="{plantFamilies}" as="family">
+                    <li><f:link.action class="dropdown-item">{family.title}</f:link.action></li>
+                </f:for>
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+</div>
