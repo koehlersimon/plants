@@ -1,7 +1,6 @@
 routeEnhancers:
   PlantDetails:
     type: Extbase
-    limitToPages: [6]
     extension: Plants
     plugin: Detail
     routes:
