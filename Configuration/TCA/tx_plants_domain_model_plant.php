@@ -114,18 +114,18 @@ return [
             'label' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant.slug',
             'config' => [
                 'type' => 'slug',
+                'prependSlash' => true,
                 'generatorOptions' => [
                     'fields' => ['title'],
-                    'fieldSeparator' => '-',
-                    'prefixParentPageSlug' => false,
+                    'fieldSeparator' => '/',
+                    'prefixParentPageSlug' => true,
                     'replacements' => [
-                        '/' => '',
-                        '<' => '',
-                        '>' => ''
+                        '/' => '-',
                     ],
                 ],
                 'fallbackCharacter' => '-',
                 'eval' => 'uniqueInSite',
+				'default' => ''
             ],
         ],
         'description' => [
