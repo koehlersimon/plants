@@ -7,6 +7,7 @@
 </f:section>
 
 <f:section name="List">
+    <f:render partial="List/Filter" arguments="{_all}"/>
     <div class="row row-cols-1 row-cols-lg-{settings.list.columns.lg} g-3">
         <f:for each="{plants}" as="plant">
             <div class="col">
