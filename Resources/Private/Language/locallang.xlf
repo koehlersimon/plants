@@ -36,6 +36,10 @@
 				<source>Botanial Name</source>
 			</trans-unit>
 
+			<trans-unit id="filter.button.plant_family">
+				<source>Plant Family</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
