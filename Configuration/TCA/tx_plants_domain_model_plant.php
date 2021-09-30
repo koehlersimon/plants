@@ -4,7 +4,7 @@ return [
         'title' => 'LLL:EXT:plants/Resources/Private/Language/locallang_db.xlf:tx_plants_domain_model_plant',
         'label' => 'title',
         'label_alt' => 'slug',
-        'default_sortby' => 'ORDER BY slug ASC',
+        'default_sortby' => 'ORDER BY title ASC',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
