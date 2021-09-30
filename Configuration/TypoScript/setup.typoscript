@@ -23,3 +23,10 @@ plugin.tx_plants{
     }
 
 }
+
+config.pageTitleProviders{
+    plants {
+      provider = SIMONKOEHLER\Plants\PageTitle\PlantTitleProvider
+      before = altPageTitle,record,seo
+   }
+}
