@@ -8,6 +8,10 @@ plugin.tx_plants{
         # cat=tx_plants; type=int; label=Detail Max characters for teaser text crop in list views
         teaserMaxCharacters = 80
         list{
+            filter{
+                # cat=tx_plants; type=int; label=Enable/disable the filter form for list views
+                enabled = 0
+            }
             columns{
                 # cat=tx_plants; type=int; label=Columns on large devices
                 lg = 4
