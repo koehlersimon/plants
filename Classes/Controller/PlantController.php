@@ -33,7 +33,7 @@ class PlantController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             $this->view->assign('plants',$this->plantRepository->findAll());
         }
 
-        if($this->settings['filter']['enabled']){
+        if($this->settings['list']['filter']['enabled']){
             $plantFamlies = $this->familyRepository->findAll();
             $this->view->assign('plantFamilies',$plantFamlies);
         }
