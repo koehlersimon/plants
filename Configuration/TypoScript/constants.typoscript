@@ -9,7 +9,7 @@ plugin.tx_plants{
         teaserMaxCharacters = 80
         list{
             filter{
-                # cat=tx_plants; type=int; label=Enable/disable the filter form for list views
+                # cat=tx_plants; type=boolean; label=Enable/disable the filter form for list views
                 enabled = 0
             }
             columns{
